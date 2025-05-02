@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { MainLayout } from "@/components/layout/MainLayout";
 import Dashboard from "@/pages/Dashboard";
+import Payments from "@/pages/Payments";
 import { DataProvider } from "@/context/DataContext";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/payments" element={<Payments />} />
           {/* Add other routes here as we build them */}
           <Route path="*" element={<Dashboard />} />
         </Routes>
