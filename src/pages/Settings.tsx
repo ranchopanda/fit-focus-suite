@@ -10,7 +10,7 @@ import { Switch } from "@/components/ui/switch";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/hooks/use-toast";
 import { useData } from '@/context/DataContext';
-import { User, Building, Bell, Save } from 'lucide-react';
+import { User, Building, Bell, Save, Settings as SettingsIcon } from 'lucide-react';
 
 const Settings = () => {
   const { toast } = useToast();
@@ -102,7 +102,7 @@ const Settings = () => {
             <span className="hidden sm:inline">Gym</span>
           </TabsTrigger>
           <TabsTrigger value="preferences" className="flex items-center gap-2">
-            <Settings size={16} />
+            <SettingsIcon size={16} />
             <span className="hidden sm:inline">Preferences</span>
           </TabsTrigger>
           <TabsTrigger value="notifications" className="flex items-center gap-2">
